@@ -32,4 +32,4 @@ def test_button(fixture_webdriver):
     Button(fixture_webdriver).faq().click()
     time.sleep(1)
 
-    assert not CareerPage(fixture_webdriver).check_url(), "The wrong page was opened"
+    assert not CareerPage(fixture_webdriver).check_url(), "The wrong page was opened."
