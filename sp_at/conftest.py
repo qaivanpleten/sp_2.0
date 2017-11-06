@@ -6,7 +6,7 @@ from sp_at.elements.main_page_elements import MainPageElements
 
 @pytest.fixture
 def fixture_webdriver() -> webdriver:
-    driver = webdriver.Chrome("C:\\Users\Владелец\PycharmProjects\chromedriver") #"C:\\Users\Владелец\PycharmProjects\chromedriver"
+    driver = webdriver.Chrome('/home/user/chromedriver') #"C:\\Users\Владелец\PycharmProjects\chromedriver"
     driver.maximize_window()
     driver.implicitly_wait(10)
 
