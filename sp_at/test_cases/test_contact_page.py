@@ -24,7 +24,7 @@ def test_page_element(fixture_webdriver):
 @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
 @allure.feature('Check elements on Contact page')
 @allure.story('FAQ button')
-def test_faq_buttons(fixture_webdriver):
+def test_faq_button(fixture_webdriver):
     ContactUsPage(fixture_webdriver).open()
     Button(fixture_webdriver).faq().click()
     assert not ContactUsPage(fixture_webdriver).check_url()
@@ -33,7 +33,7 @@ def test_faq_buttons(fixture_webdriver):
 @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
 @allure.feature('Check elements on Contact page')
 @allure.story('Try it now button')
-def test_try_buttons(fixture_webdriver):
+def test_try_button(fixture_webdriver):
     ContactUsPage(fixture_webdriver).open()
     Button(fixture_webdriver).try_it_now().click()
     assert not ContactUsPage(fixture_webdriver).check_url()
